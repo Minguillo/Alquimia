@@ -6,7 +6,7 @@ package mx.itson.alquimia.curp;
 
 /**
  *
- * @author beltr
+ * @author beltran
  */
 public class Conversion {
    
@@ -66,47 +66,78 @@ public class Conversion {
        }
         
     }
-    public void obtenerFechaNacimiento(String mes){
-        String digitoMes = "";
-       if(mes.equals("enero")){
-           digitoMes =  "01";
-       }             
-       else if (mes.equals("febrero")){
-           digitoMes = "02";
-       }
-       else if (mes.equals("marzo")){
-           digitoMes = "03";
-       }
-       else if (mes.equals("abril")){
-           digitoMes = "04";
-       }
-       else if (mes.equals("mayo")){
-           digitoMes = "05";
-       }
-       else if (mes.equals("junio")){
-           digitoMes = "06";
-       }
-       else if (mes.equals("julio")){
-           digitoMes = "07";
-       }
-       else if (mes.equals("agosto")){
-           digitoMes = "08";
-       }
-       else if (mes.equals("septiembre")){
-           digitoMes = "09";
-       }
-       else if (mes.equals("octubre")){
-           digitoMes = "10";
-       }
-       else if (mes.equals("noviembre")){
-           digitoMes = "11";
-       }
-       else if (mes.equals("diciembre")){
-           digitoMes = "12";
-       }
+    /**
+     * agregue datos de dia, mes, año y el genero by raul
+     * @param año 
+     */
+     public void obtenerAño(String año){
        
        
     }
+    
+    public void obtenerFechaNacimiento(String mes){
+        String digitoMes = "";
+       if(mes.equals('1')){
+           digitoMes =  "01";
+       }             
+       else if (mes.equals('2')){
+           digitoMes = "02";
+       }
+       else if (mes.equals('3')){
+           digitoMes = "03";
+       }
+       else if (mes.equals('4')){
+           digitoMes = "04";
+       }
+       else if (mes.equals('5')){
+           digitoMes = "05";
+       }
+       else if (mes.equals('6')){
+           digitoMes = "06";
+       }
+       else if (mes.equals('7')){
+           digitoMes = "07";
+       }
+       else if (mes.equals('8')){
+           digitoMes = "08";
+       }
+       else if (mes.equals('9')){
+           digitoMes = "09";
+       }
+       
+       
+       
+    }
+    public void obtenerDia(String dia){
+        String digitodia = "";
+       if(dia.equals('1')){
+           digitodia =  "01";
+       }             
+       else if (dia.equals('2')){
+           digitodia = "02";
+       }
+       else if (dia.equals('3')){
+           digitodia = "03";
+       }
+       else if (dia.equals('4')){
+           digitodia = "04";
+       }
+       else if (dia.equals('5')){
+           digitodia = "05";
+       }
+       else if (dia.equals('6')){
+           digitodia = "06";
+       }
+       else if (dia.equals('7')){
+           digitodia = "07";
+       }
+       else if (dia.equals('8')){
+           digitodia = "08";
+       }
+       else if (dia.equals('9')){
+           digitodia = "09";
+       }
+       }
     
     public static String obtenerSexo(String sexo){
         switch (sexo){

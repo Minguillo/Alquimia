@@ -8,7 +8,7 @@ import mx.itson.alquimia.curp.Conversion;
 
 /**
  *
- * @author 52622
+ * @author beltran
  */
 public class Main extends javax.swing.JFrame {
 
@@ -72,6 +72,12 @@ public class Main extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Franklin Gothic Book", 1, 14)); // NOI18N
         jLabel4.setText("Apellido Materno");
+
+        txtApellidoMaterno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtApellidoMaternoActionPerformed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Franklin Gothic Book", 1, 14)); // NOI18N
         jLabel5.setText("Fecha de Nacimiento");
@@ -259,7 +265,10 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         
     }//GEN-LAST:event_txtMesActionPerformed
-
+/**
+ * agregue dia mes año concatenado by raul
+ * @param evt 
+ */
     private void btnGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarActionPerformed
        String nombre = txtNombre.getText();
        String apellidoPaterno = txtApellidoPaterno.getText();
@@ -268,11 +277,15 @@ public class Main extends javax.swing.JFrame {
        String dia = txtDias.getText();
        String mes = txtMes.getText();
        String año = txtAño.getText();
-        lblCurp.setText(Conversion.clavePaterno(apellidoPaterno)+Conversion.primerLetraApellidoMaterno(apellidoMaterno)+ Conversion.obtenerSexo(sexo)+
+        lblCurp.setText(Conversion.clavePaterno(apellidoPaterno)+Conversion.primerLetraApellidoMaterno(apellidoMaterno)+año+mes+dia+Conversion.obtenerSexo(sexo)+
         Conversion.primeraConsonanteApellidoPaterno(apellidoPaterno)+Conversion.primerConsonanteApellidoMaterno(apellidoMaterno)
         );
         
     }//GEN-LAST:event_btnGenerarActionPerformed
+
+    private void txtApellidoMaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoMaternoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtApellidoMaternoActionPerformed
 
     /**
      * @param args the command line arguments
