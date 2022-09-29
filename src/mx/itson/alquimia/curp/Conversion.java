@@ -66,12 +66,34 @@ public class Conversion {
        }
         
     }
+    public static char primerLetraNombre(String nombre){
+        nombre = nombre.toUpperCase().trim();
+        String primerLetra;
+        char trozo;
+        
+        if(nombre.contains("JOSE")){
+            String[] partes = nombre.split(" ");
+            primerLetra = partes[1].substring(0,1);
+            trozo = primerLetra.charAt(0);
+            return trozo;
+        }
+        else if(nombre.contains("MARIA")){
+            String[] partes = nombre.split(" ");
+            primerLetra = partes[1].substring(0,1);
+            trozo = primerLetra.charAt(0); 
+        }
+           
+          return ' ';  
+    }
+        
+    
+    
     /**
      * agregue datos de dia, mes, año y el genero by raul
      * @param año 
      */
-     public void obtenerAño(String año){
-       
+     public static String obtenerAño(String año){
+       return año.substring(2,4);
        
     }
     
